@@ -1,0 +1,13 @@
+{
+  "horizon": 400,
+  "goal_soups": 4,
+  "epochs": 30,
+  "lr": 0.001,
+  "batch_size": 128,
+  "lambda": 2,
+  "mu": 1,
+  "risk_threshold": 0.1,
+  "candidate_cap": 8,
+  "planner_call_cap": 10,
+  "planner_token_cap": 20000
+}

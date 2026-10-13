@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slacksync"
+version = "0.1.0"
+description = "SlackSync implementation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "torch>=2.3,<3", "matplotlib>=3.8,<4", "scikit-learn>=1.4,<2", "transformers>=4.51,<5", "accelerate>=1.0,<2", "sentencepiece>=0.2,<1"]
+
+[project.scripts]
+slacksync = "slacksync.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Repository = "https://github.com/Hqa77880011/slacksync"
+
+[project.optional-dependencies]
+kitchen = ["overcooked-ai @ git+https://github.com/HumanCompatibleAI/overcooked_ai@739950a079cdaed5a44fcc662efc40244c205d06"]
